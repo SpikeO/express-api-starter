@@ -1,0 +1,28 @@
+{
+  "name": "proveit-api",
+  "version": "1.0.0",
+  "description": "Prove It API",
+  "main": "server.js",
+  "scripts": {
+    "build-flow": "rm -rf lib/ && mkdir lib && node ./node_modules/flow-remove-types/flow-remove-types -d lib/src/ ./src --pretty",
+    "start": "node server.js",
+    "test": "test"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "config": "^1.26.2",
+    "express": "^4.15.4",
+    "jsonwebtoken": "^8.0.1",
+    "mysql2": "^1.4.2",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "path": "^0.12.7",
+    "sequelize": "^4.10.3",
+    "umzug": "^2.0.1"
+  },
+  "devDependencies": {
+    "flow-remove-types": "^1.2.1"
+  }
+}
